@@ -1,0 +1,26 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      accentColor: "#ff8b2e"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Blue"
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "a5721145-3649-d709-679b-cef794125de0"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
