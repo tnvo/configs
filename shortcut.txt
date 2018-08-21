@@ -1,0 +1,203 @@
+VIM
+hjkl - arrow key
+20k - change something 20 lines above cursor
+v2j - highlight next 2 lines
+jk - escape insert mode
+ 
+
+a Append text following current cursor position
+
+A Append text to the end of current line
+
+i Insert text before the current cursor position
+
+I Insert text at the beginning of the cursor line
+
+o Open up a new line following the current line and add text there
+
+O Open up a new line in front of the current line and add text there
+
+
+Cursor Movement Commands
+
+h Moves the cursor one character to the left
+
+l Moves the cursor one character to the right
+
+k Moves the cursor up one line
+
+j Moves the cursor down one line
+
+nG or :n Cursor goes to the specified (n) line
+
+(ex. 10G goes to line 10)
+
+^F (CTRl F) Forward screenful
+
+^B Backward screenful
+
+^f One page forward
+
+^b One page backward
+
+^U Up half screenful
+
+^D Down half screenful
+
+$ Move cursor to the end of current line
+
+0 (zero) Move cursor to the beginning of current line
+
+w Forward one word
+
+b Backward one word
+
+Exit Commands
+
+:wq Write file to disk and quit the editor
+
+:q! Quit (no warning)
+
+:q Quit (a warning is printed if a modified file has not been saved)
+
+ZZ Save workspace and quit the editor (same as :wq)
+
+: 10,25 w temp
+
+write lines 10 through 25 into file named temp. Of course, other line
+
+numbers can be used. (Use :f to find out the line numbers you want.
+
+
+
+Examples
+
+Opening a New File
+
+Step 1	type	vim filename	(create a file named filename)
+
+Step 2	type	i	( switch to insert mode)
+
+Step 3	enter text	(enter your Ada program)
+
+Step 4	hit	Esc key	(switch back to command mode)
+
+Step 5	type	:wq	(write file and exit vim)
+
+ 
+
+Editing the Existing File
+
+Step 1	type	vim filename	(edit the existing file named filename)
+
+Step 2	move around the file using h/j/k/l key or any appropriate command
+
+h Moves the cursor one character to the left
+
+l Moves the cursor one character to the right
+
+k Moves the cursor up one line
+
+j Moves the cursor down one line
+
+nG or :n Cursor goes to the specified (n) line
+
+(ex. 10G goes to line 10)
+
+Step 3	edit required text (replace or delete or insert)
+
+Step 4	hit Esc key (exit from insert mode if you insert or replace text)
+
+Step 5	type	:wq
+
+
+TMUX
+tmux info
+
+Panes
+Split pane vertically
+Ctrl + b %
+
+Horizontally
+Ctrl + b "
+
+Move Current pane Left
+Ctrl b {
+
+Move right
+Ctrl b }
+
+Show pane #
+Ctrl b q
+
+Resize current pane height
+Ctrl b Ctrl + down
+
+Close current pane
+Ctrl b x
+
+
+COPY MODE
+Enter copy mode
+Ctrl b [
+
+
+Enter copy mode and scroll 1 page up
+Ctrl b PgUp
+
+Quit
+q
+
+Go to top line
+g
+
+Go to bottom line
+G
+
+Move cursor
+left - h
+down - j
+up - k
+right - l
+forward - w
+backward - b
+
+
+Session
+Rename session
+Ctrl b $
+
+Detach from session
+Ctrl b d
+
+
+
+Windows
+Create window
+Ctrl b c 
+
+Rename current window
+Ctrl b ,
+
+Close current window 
+Ctrl b &
+
+Previous window 
+Ctrl b p
+
+Switch window
+Ctrl b 0....9
+
+
+
+Sessions:
+tmux ls
+tmux new
+tmux kill-ses -t mysession
+tmux kill-session -t mysesssion
+tmux kill-session -a
+
+Kill all session but the current
+tmux kill-session -a
+
+
