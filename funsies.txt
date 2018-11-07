@@ -1,0 +1,6 @@
+# gem install
+fortune
+cowsay
+lolcat
+artii
+colorls
