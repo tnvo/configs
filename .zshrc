@@ -51,7 +51,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(autopep8 docker encode64 extract git kubectl pip pylint virtualenv web-search)
 
 source $ZSH/oh-my-zsh.sh
 
